@@ -1,0 +1,11 @@
+image: node:12.18.2
+
+pages:
+  stage: deploy
+  script:
+    - echo "Deploy pages"
+  artifacts:
+    paths:
+      - web/
+  only:
+    - master
